@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marriage Proposal</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .prompt {
+        margin-top: 100px;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    #ring {
+        display: none;
+        margin-top: 50px;
+    }
+</style>
+</head>
+<body>
+<div class="prompt">
+    <h2>Will you marry me?</h2>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+</div>
+<div id="ring">
+    💍
+    <p>Here, put it on.</p>
+</div>
+<script>
+    const yesBtn = document.getElementById('yesBtn');
+    const noBtn = document.getElementById('noBtn');
+    const ringDiv = document.getElementById('ring');
+
+    yesBtn.addEventListener('click', function() {
+        ringDiv.style.display = 'block';
+    });
+
+    noBtn.addEventListener('click', function() {
+        alert("ulol😡😡.");
+    });
+</script>
+</body>
+</html>
